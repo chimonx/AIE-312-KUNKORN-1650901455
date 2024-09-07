@@ -9,24 +9,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
       body {
-        background-color: #f8f9fa;
+        background-color: #f7f7f7;
+        font-family: 'Arial', sans-serif;
       }
 
       header {
         text-align: center;
-        margin-top: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-bottom: 2px solid #e0e0e0;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        color: #333;
       }
 
       nav {
-        text-align: center;
-        margin-top: 20px;
-        background-color: #ffb3b3;
+        background-color: #333;
         padding: 10px 0;
+        text-align: center;
       }
 
       nav ul {
         list-style: none;
         padding: 0;
+        margin: 0;
       }
 
       nav ul li {
@@ -35,37 +44,39 @@
       }
 
       nav a {
-        color: white;
+        color: #fff;
         text-decoration: none;
         font-weight: bold;
+        font-size: 1.1rem;
       }
 
-      section h1, h2 {
-        color: #ff69b4;
+      section {
+        margin: 40px 0;
       }
 
-      footer {
-        text-align: center;
-        background-color: #ffb3b3;
-        color: white;
-        padding: 10px;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
+      h1, h2 {
+        color: #333;
       }
 
-      #aboutme {
-        text-align: center;
-        margin-top: 20px;
+      .container {
+        max-width: 800px;
+        margin: auto;
       }
 
       #aboutme img {
-        border-radius: 15px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
       }
 
-      #contact {
-        text-align: center;
-        margin-top: 20px;
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul li::before {
+        content: "• ";
+        color: #007bff;
       }
 
       #contact a {
@@ -75,6 +86,16 @@
 
       #contact a:hover {
         text-decoration: underline;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
       }
     </style>
   </head>
@@ -92,58 +113,49 @@
     </nav>
 
     <section id="aboutme" class="container">
-      <h1>🌸 About Me 🌸</h1>
+      <h1>About Me</h1>
       <section>
-        <h2>Personality 🙇🏻‍♀️</h2>
+        <h2>Personality</h2>
         <h3>Kunkorn Trakulsri</h3>
-        <ul class="list-unstyled">
+        <ul>
           <li><strong>Nickname:</strong> Dino</li>
           <li><strong>Age:</strong> 20</li>
           <li><strong>Birthday:</strong> 14th September 2003</li>
-          <li>
-            <strong>Hobbies:</strong>
+          <li><strong>Hobbies:</strong>
             <ul>
-              <li>work together</li>
-              <li>listening to music 🎵</li>
+              <li>Working together</li>
+              <li>Listening to music 🎵</li>
             </ul>
           </li>
         </ul>
       </section>
       <section>
-        <h2>Education 📚</h2>
+        <h2>Education</h2>
         <h3>2021-2025:</h3>
         <p>Artificial Intelligence Engineering and Data Science, Bangkok University</p>
       </section>
       <section>
-        <h2>Work Experience 💼</h2>
+        <h2>Work Experience</h2>
         <h3>2020-2021:</h3>
         <p>Founder</p>
         <h3>2021-Present:</h3>
         <p>Cyberzen Co., Ltd.</p>
       </section>
-      <img src="https://web-bu.taliwhub.dev/html/wallpaper.jpeg" alt="Dino" class="img-fluid mt-4">
+      <img src="https://web-bu.taliwhub.dev/html/wallpaper.jpeg" alt="Dino" />
     </section>
 
     <section id="contact" class="container">
-      <h2>Contact Me 🥰</h2>
-      <h3>Let's get in touch! 🌟</h3>
-      <h4>Feel free to contact me if you have any questions or just want to say hi! 🌈</h4>
+      <h2>Contact Me</h2>
+      <p>For any inquiries, please feel free to contact me:</p>
       <p>
-        If you want to contact me, please send an email to: 💌
-        <a href="mailto:kunkorn.trak@bumail.net">kunkorn.trak@bumail.net</a>
-      </p>
-      <p>
-        or call me at: 📱
-        <a href="tel:+6665090025">+6625090025</a>
-      </p>
-      <p>
-        or find me on social media: 📲
-        <a href="https://www.google.com/search?q=kunkorn trakulsri" target="_blank">Kunkorn</a>
+        <strong>Email:</strong> <a href="mailto:kunkorn.trak@bumail.net">kunkorn.trak@bumail.net</a><br>
+        <strong>Phone:</strong> <a href="tel:+6665090025">+6625090025</a><br>
+        <strong>Social Media:</strong> <a href="https://www.google.com/search?q=kunkorn trakulsri" target="_blank">Kunkorn</a>
       </p>
     </section>
 
     <footer>
-      <p>&copy; 2024 by Kunkorn</p>
+      <p>&copy; 2024 Kunkorn Trakulsri</p>
     </footer>
 
     <!-- Bootstrap 5 JS -->
