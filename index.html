@@ -1,69 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chimonx Profile</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunkorn</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://www.bu.ac.th/dist/images/favicon.ico"
+      type="image/ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <style>
-        body {
-            background-color: #f8f9fa; /* Light grey background */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .card {
-            border-radius: 15px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            background-color: #ffffff; /* White card background */
-        }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
 
-        #aboutme h1 {
-            color: #ff69b4; /* Pink color for the heading */
-        }
-        #aboutme ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        #aboutme ul li::before {
-            content: "🌸 ";
-        }
+      header {
+        background-color: #ff6f61;
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .nav-link:hover {
+        color: #ff6f61 !important;
+      }
+
+      img {
+        border-radius: 10px;
+        max-width: 100%;
+      }
     </style>
-</head>
-<body>
-    <div class="container d-flex justify-content-center align-items-center flex-grow-1">
-        <div class="card text-center p-4" style="width: 22rem;">
-            <div class="card-body">
-                <h1 class="card-title"># Chimonx</h1>
-                <p class="card-text"><strong>Kunkorn Trakulsri</strong></p>
-                <p class="card-text">Student ID: 1650901455</p>
-                <p class="card-text">Email: <a href="mailto:kunkorn.trak@bumail.net">kunkorn.trak@bumail.net</a></p>
-            </div>
-        </div>
-    </div>
+  </head>
 
-    <section id="aboutme" class="container text-center p-4">
-        <h1>🌸 About Me 🌸</h1>
-            <h2>Personality 🙇🏻‍♀️</h2>
-            <h3>Maneeporn Noipang</h3>
+  <body>
+    <header>
+      <h1>KUNKORN 🍒🖥️</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kunkorn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact 💌</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="aboutme" class="py-5">
+      <div class="container">
+        <h2 class="text-center text-primary mb-4">🌸 About Me 🌸</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Personality 🙇🏻‍♀️</h3>
             <ul>
-              <li>Nickname: bowwie</li>
-              <li>Age: 26</li>
-              <li>Birthday: 9th July 1998</li>
+              <li>Nickname: Dino</li>
+              <li>Age: 20</li>
+              <li>Birthday: 14th September 2003</li>
               <li>
                 Hobbies:
                 <ul>
-                  <li>watching movies and series 📺</li>
-                  <li>listening to music 🎵</li>
+                  <li>Working together</li>
+                  <li>Listening to music 🎵</li>
                 </ul>
               </li>
             </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>Education 📚</h3>
+            <p>
+              2021-2025: Artificial Intelligence Engineering and Data Science,
+              Bangkok University
+            </p>
+            <h3>Work Experience 💼</h3>
+            <p>2020-2021: Uncommon Co-op</p>
+            <p>2021-Present: Cyberzen Co., Ltd.</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://web-bu.taliwhub.dev/html/wallpaper.jpeg"
+            alt="Dino"
+            class="img-fluid mt-4"
+          />
+        </div>
+      </div>
     </section>
 
-    <footer class="text-center">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center text-success mb-4">Contact Me 🥰</h2>
+        <div class="text-center">
+          <h3>Let's get in touch! 🌟</h3>
+          <h4>
+            Feel free to contact me if you have any questions or just want to
+            say hi! 🌈
+          </h4>
+          <p>
+            If you want to contact me, please send an email to: 💌
+            <a href="mailto:kunkorn.trak@bumail.net"
+              >kunkorn.trak@bumail.net</a
+            >
+          </p>
+          <p>
+            or call me at: 📱
+            <a href="tel:+6665090025">+6625090025</a>
+          </p>
+          <p>
+            or find me on social media: 📲
+            <a
+              href="https://www.google.com/search?q=kunkorn trakulsri"
+              target="_blank"
+              >Kunkorn</a
+            >
+          </p>
+          <button id="contactBtn" class="btn btn-primary mt-3">
+            Click to Contact Me 💬
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <p>&copy; 2024 by Kunkorn</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script>
+      document.getElementById("contactBtn").addEventListener("click", function () {
+        Swal.fire({
+          title: 'Contact Kunkorn',
+          text: 'Email: kunkorn.trak@bumail.net',
+          icon: 'info',
+          confirmButtonText: 'Close',
+          background: '#f4f4f4',
+          confirmButtonColor: '#ff6f61'
+        });
+      });
+    </script>
+  </body>
 </html>
