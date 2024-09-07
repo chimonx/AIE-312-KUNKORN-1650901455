@@ -179,12 +179,18 @@
     <script>
       document.getElementById("contactBtn").addEventListener("click", function () {
         Swal.fire({
-          title: 'Contact Kunkorn',
-          text: 'Email: kunkorn.trak@bumail.net',
-          icon: 'info',
-          confirmButtonText: 'Close',
-          background: '#f4f4f4',
-          confirmButtonColor: '#ff6f61'
+          title: 'Contact Kunkorn?',
+          text: "Would you like to contact Kunkorn via email?",
+          icon: 'question',
+          showCancelButton: true,
+          confirmButtonText: 'Yes',
+          cancelButtonText: 'No',
+          confirmButtonColor: '#ff6f61',
+          cancelButtonColor: '#3085d6'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = "mailto:kunkorn.trak@bumail.net";
+          }
         });
       });
     </script>
