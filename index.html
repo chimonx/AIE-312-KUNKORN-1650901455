@@ -18,6 +18,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             background-color: #ffffff; /* White card background */
         }
+
+        #aboutme h1 {
+            color: #ff69b4; /* Pink color for the heading */
+        }
+        #aboutme ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        #aboutme ul li::before {
+            content: "🌸 ";
+        }
     </style>
 </head>
 <body>
@@ -31,6 +42,30 @@
             </div>
         </div>
     </div>
+
+    <section id="aboutme" class="container text-center p-4">
+        <h1>🌸 About Me 🌸</h1>
+        <section>
+            <h2>Personality 🙇🏻‍♀️</h2>
+            <h3>Kunkorn Trakulsri</h3>
+            <ul class="text-start">
+                <li>Nickname: Dino</li>
+                <li>Age: 20</li>
+                <li>Birthday: 14th September 2003</li>
+                <li>
+                    Hobbies:
+                    <ul>
+                        <li>work togeter</li>
+                        <li>listening to music 🎵</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <footer class="text-center">
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
