@@ -85,6 +85,14 @@
             class="img-fluid mt-4"
           />
         </div>
+
+        <!-- News Section -->
+        <div class="mt-5">
+          <h3 class="text-center text-warning">📰 Latest News 📰</h3>
+          <ul id="news-list" class="list-unstyled">
+            <!-- News will be inserted here dynamically -->
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -148,6 +156,31 @@
           }
         });
       });
+
+      // Fetch RSS feed
+      async function fetchRSS() {
+        try {
+          const response = await fetch('https://www.thaiware.com/rss/rss_latestPost_news.php');
+          const text = await response.text();
+          const parser = new DOMParser();
+          const xml = parser.parseFromString(text, "application/xml");
+          const items = xml.querySelectorAll("item");
+
+          let newsHTML = '';
+          items.forEach(item => {
+            const title = item.querySelector("title").textContent;
+            const link = item.querySelector("link").textContent;
+            newsHTML += `<li><a href="${link}" target="_blank">${title}</a></li>`;
+          });
+
+          document.getElementById('news-list').innerHTML = newsHTML;
+        } catch (error) {
+          console.error('Error fetching RSS feed:', error);
+        }
+      }
+
+      // Call the function to fetch and display the news
+      fetchRSS();
     </script>
   </body>
 </html>
