@@ -9,95 +9,22 @@
   <!-- Favicon -->
   <link rel="icon" href="https://www.bu.ac.th/dist/images/favicon.ico" type="image/ico"/>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css" />
   <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      scroll-behavior: smooth;
-    }
-    header {
-      background: linear-gradient(135deg, #f06, #f79);
-      color: white;
-      padding: 60px 0;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-    .navbar-brand {
-      font-weight: 700;
-      font-size: 1.5rem;
-    }
-    .section-title {
-      position: relative;
-      display: inline-block;
-      padding-bottom: 10px;
-    }
-    .section-title::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 3px;
-      background-color: #ff6f61;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    .footer {
-      background-color: #343a40;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    .footer a {
-      color: #ff6f61;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-    /* Responsive Image */
-    .profile-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-  </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header>
-    <h1>KUNKORN 🍒🖥️</h1>
-    <p class="lead">Welcome to my personal website!</p>
-  </header>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Kunkorn</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+  <header class="bg-white shadow">
+    <div class="container py-4 d-flex justify-content-between align-items-center">
+      <h1 class="m-0 text-dark">Kunkorn</h1>
+      <nav>
+        <ul class="nav">
           <li class="nav-item">
             <a class="nav-link active" href="#aboutme">About Me</a>
           </li>
@@ -105,27 +32,28 @@
             <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact 💌</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- About Me Section -->
   <section id="aboutme" class="py-5">
     <div class="container">
-      <h2 class="text-center text-primary mb-4 section-title">🌸 About Me 🌸</h2>
+      <h2 class="text-center mb-4">About Me</h2>
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-4 text-center">
           <img
             src="https://web-bu.taliwhub.dev/html/wallpaper.jpeg"
             alt="Dino"
-            class="profile-img mb-4 mb-md-0"
+            class="img-fluid rounded-circle mb-3"
+            style="width: 200px; height: 200px; object-fit: cover;"
           />
         </div>
-        <div class="col-md-6">
-          <h3>Personality 🙇🏻‍♀️</h3>
+        <div class="col-md-8">
+          <h3>Personality</h3>
           <ul class="list-unstyled">
             <li><strong>Nickname:</strong> Dino</li>
             <li><strong>Age:</strong> 20</li>
@@ -138,12 +66,12 @@
               </ul>
             </li>
           </ul>
-          <h3 class="mt-4">Education 📚</h3>
+          <h3 class="mt-4">Education</h3>
           <p>
             <strong>2021-2025:</strong> Artificial Intelligence Engineering and Data Science,
             Bangkok University
           </p>
-          <h3 class="mt-4">Work Experience 💼</h3>
+          <h3 class="mt-4">Work Experience</h3>
           <ul class="list-unstyled">
             <li><strong>2020-2021:</strong> Uncommon Co-op</li>
             <li><strong>2021-Present:</strong> Cyberzen Co., Ltd.</li>
@@ -156,7 +84,7 @@
   <!-- Skills Section -->
   <section id="skills" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center text-success mb-4 section-title">🛠️ Skills 🛠️</h2>
+      <h2 class="text-center mb-4">Skills</h2>
       <div class="row">
         <div class="col-md-6">
           <h4>Technical Skills</h4>
@@ -181,27 +109,24 @@
   <!-- Contact Section -->
   <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="text-center text-success mb-4 section-title">Contact Me 🥰</h2>
+      <h2 class="text-center mb-4">Contact Me</h2>
       <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="card p-4 shadow">
-            <h3 class="text-center mb-3">Let's get in touch! 🌟</h3>
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name 💼</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name" required />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email 💌</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message 📝</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Send Message 💬</button>
-            </form>
-          </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
           <div class="text-center mt-4">
             <p>Or reach me directly:</p>
             <p>
@@ -211,8 +136,8 @@
             <p>
               📲 <a href="https://www.google.com/search?q=kunkorn%20trakulsri" target="_blank">Kunkorn</a>
             </p>
-            <button id="contactBtn" class="btn btn-success mt-3">
-              Click to Contact Me 💬
+            <button id="contactBtn" class="btn btn-secondary mt-3">
+              Click to Contact Me
             </button>
           </div>
         </div>
@@ -221,14 +146,14 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 by Kunkorn</p>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-2">&copy; 2024 by Kunkorn</p>
       <div>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" class="text-white me-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com/" class="text-white me-3" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/" class="text-white me-3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/" class="text-white" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </footer>
@@ -245,8 +170,8 @@
         showCancelButton: true,
         confirmButtonText: 'Yes',
         cancelButtonText: 'No',
-        confirmButtonColor: '#ff6f61',
-        cancelButtonColor: '#3085d6'
+        confirmButtonColor: '#6c757d',
+        cancelButtonColor: '#d33'
       }).then((result) => {
         if (result.isConfirmed) {
           window.location.href = "mailto:kunkorn.trak@bumail.net";
