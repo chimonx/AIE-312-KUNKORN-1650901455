@@ -1,33 +1,116 @@
+/* General Styles */
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #333333;
+}
+
+/* Navbar */
+.nav-link {
+  color: #555555 !important;
+  margin-left: 20px;
+}
+
+.nav-link.active {
+  color: #000000 !important;
+  font-weight: 700;
+}
+
+/* About Me Section */
+#aboutme img {
+  border: 2px solid #e0e0e0;
+}
+
+#aboutme ul {
+  list-style: none;
+  padding: 0;
+}
+
+#aboutme ul li {
+  margin-bottom: 10px;
+}
+
+#aboutme ul li strong {
+  color: #555555;
+}
+
+/* Skills Section */
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+  color: #555555;
+}
+
+#contact .btn-primary {
+  background-color: #6c757d;
+  border: none;
+}
+
+#contact .btn-primary:hover {
+  background-color: #5a6268;
+}
+
+/* Footer */
+footer a {
+  font-size: 1.2rem;
+}
+
+footer a:hover {
+  color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
   }
-  
-  header {
-    background-color: #ff6f61;
-    color: white;
-    padding: 30px;
+
+  .nav-link {
+    margin-left: 10px;
+  }
+
+  #aboutme .col-md-4, #aboutme .col-md-8 {
     text-align: center;
   }
-  
-  h1 {
-    font-size: 2.5rem;
+
+  #aboutme .col-md-8 {
+    margin-top: 20px;
   }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .nav-link:hover {
-    color: #ff6f61 !important;
-  }
-  
-  img {
-    border-radius: 10px;
-    max-width: 100%;
-  }
-  
+}
