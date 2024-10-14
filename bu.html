@@ -23,19 +23,21 @@
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
+            var formData = new FormData();
+            formData.append('username', document.getElementById('username').value);
+            formData.append('password', document.getElementById('password').value);
 
-            var url = 'https://assessment.bu.ac.th/App_AJAX/Login/CheckLogin.aspx?&Username=' + encodeURIComponent(username) + '&Password=' + encodeURIComponent(password);
-
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('result').innerText = data.includes('studentOK') ? 'Login Successful' : 'Login Failed';
-                })
-                .catch(error => {
-                    document.getElementById('result').innerText = 'Error: ' + error;
-                });
+            fetch('login.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('result').innerText = data.includes('studentOK') ? 'Login Successful' : 'Login Failed';
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Error: ' + error;
+            });
         });
     </script>
 </body>
